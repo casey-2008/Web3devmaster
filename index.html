@@ -447,8 +447,12 @@ document.getElementById('submit-btn').addEventListener('click', function() {
 document.querySelectorAll('a[href^="#"]').forEach(function(a) {
   a.addEventListener('click', function(e) {
     e.preventDefault();
-    var target = document.querySelector(a.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    var href = a.getAttribute('href');
+    var target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.pushState(null, null, href);
+    }
   });
 });
 // ── ПЕРЕВОДЫ ──
