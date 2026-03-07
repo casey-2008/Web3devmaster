@@ -513,6 +513,26 @@ function toggleLang() {
   currentLang = currentLang === 'ru' ? 'en' : 'ru';
   document.getElementById('lang-toggle').textContent = currentLang === 'ru' ? 'EN' : 'RU';
   applyLang();
+  updatePrice();
+}
+
+function updatePrice() {
+  var priceEl = document.querySelector('.price-num');
+  if (currentLang === 'ru') {
+    priceEl.innerHTML = '8 000 ₽';
+    return;
+  }
+  priceEl.innerHTML = '~ <span style="font-size:1.5rem;color:var(--muted)">загрузка...</span>';
+  fetch('https://open.er-api.com/v6/latest/RUB')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var rate = data.rates.USD;
+      var usd = Math.round(8000 * rate);
+      priceEl.innerHTML = '$' + usd;
+    })
+    .catch(function() {
+      priceEl.innerHTML = '~ $90';
+    });
 }
 
 function applyLang() {
