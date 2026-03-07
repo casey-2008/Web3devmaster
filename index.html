@@ -286,9 +286,9 @@ footer p { font-size: .82rem; color: var(--muted); }
     </div>
     <div class="work-body">
       <div class="work-title">SatAnchor</div>
-      <p class="work-desc">Протокол первого уровня Bitcoin — хранилище сообщений с временной блокировкой и зашифрованный мессенджер через OP_RETURN. Без аккаунтов и серверов.</p>
+      <p class="work-desc" data-i18n="w1_desc">Протокол первого уровня Bitcoin — хранилище сообщений с временной блокировкой и зашифрованный мессенджер через OP_RETURN. Без аккаунтов и серверов.</p>
       <div class="work-tech"><span class="tech-pill">Bitcoin</span><span class="tech-pill">OP_RETURN</span><span class="tech-pill">Cryptography</span></div>
-      <a href="https://satanchor.vercel.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--accent);font-size:.82rem;text-decoration:none;opacity:.8;">Открыть сайт →</a>
+      <a href="https://satanchor.vercel.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--accent);font-size:.82rem;text-decoration:none;opacity:.8;" data-i18n="work_link">Открыть сайт →</a>
     </div>
   </div>
   <div class="card work-card">
@@ -297,9 +297,9 @@ footer p { font-size: .82rem; color: var(--muted); }
     </div>
     <div class="work-body">
       <div class="work-title">BitPredict</div>
-      <p class="work-desc">Рынок предсказаний + беспроигрышная лотерея на Bitcoin через OPNet. Каждая проигрышная ставка финансирует призовой пул — никто не теряет деньги.</p>
+      <p class="work-desc" data-i18n="w2_desc">Рынок предсказаний + беспроигрышная лотерея на Bitcoin через OPNet. Каждая проигрышная ставка финансирует призовой пул — никто не теряет деньги.</p>
       <div class="work-tech"><span class="tech-pill">Bitcoin</span><span class="tech-pill">OPNet</span><span class="tech-pill">DeFi</span></div>
-      <a href="https://bitpredict-liart.vercel.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--accent);font-size:.82rem;text-decoration:none;opacity:.8;">Открыть сайт →</a>
+      <a href="https://bitpredict-liart.vercel.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--accent);font-size:.82rem;text-decoration:none;opacity:.8;" data-i18n="work_link">Открыть сайт →</a>
     </div>
   </div>
   <div class="card work-card">
@@ -308,9 +308,9 @@ footer p { font-size: .82rem; color: var(--muted); }
     </div>
     <div class="work-body">
       <div class="work-title">Sats DCA</div>
-      <p class="work-desc">On-chain DCA бот на Bitcoin L1 через OP_NET. Смарт-контракт автоматически свапает через Motoswap по интервалу блоков — без кастодианов и мостов.</p>
+      <p class="work-desc" data-i18n="w3_desc">On-chain DCA бот на Bitcoin L1 через OP_NET. Смарт-контракт автоматически свапает через Motoswap по интервалу блоков — без кастодианов и мостов.</p>
       <div class="work-tech"><span class="tech-pill">Bitcoin L1</span><span class="tech-pill">OP_NET</span><span class="tech-pill">Motoswap</span></div>
-      <a href="https://sats-dca-gray.vercel.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--accent);font-size:.82rem;text-decoration:none;opacity:.8;">Открыть сайт →</a>
+      <a href="https://sats-dca-gray.vercel.app/" target="_blank" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;color:var(--accent);font-size:.82rem;text-decoration:none;opacity:.8;" data-i18n="work_link">Открыть сайт →</a>
     </div>
   </div>
 </div>
@@ -481,6 +481,10 @@ var i18n = {
     hours_title: 'Время работы', hours_text: 'Пн–Вс, 9:00–22:00 МСК',
     form_name: 'Ваше имя', form_name_ph: 'Иван Петров',
     form_msg: 'Сообщение', form_msg_ph: 'Расскажите о вашем проекте...',
+    w1_desc: 'Протокол первого уровня Bitcoin — хранилище сообщений с временной блокировкой и зашифрованный мессенджер через OP_RETURN. Без аккаунтов и серверов.',
+    w2_desc: 'Рынок предсказаний + беспроигрышная лотерея на Bitcoin через OPNet. Каждая проигрышная ставка финансирует призовой пул — никто не теряет деньги.',
+    w3_desc: 'On-chain DCA бот на Bitcoin L1 через OP_NET. Смарт-контракт автоматически свапает через Motoswap по интервалу блоков — без кастодианов и мостов.',
+    work_link: 'Открыть сайт →',
   },
   en: {
     nav_features:'Why me', nav_works:'Works', nav_pricing:'Pricing', nav_contact:'Contact', nav_order:'Order',
@@ -510,6 +514,10 @@ var i18n = {
     hours_title: 'Working hours', hours_text: 'Mon–Sun, 9:00–22:00 MSK', 
     form_name: 'Your name', form_name_ph: 'John Smith',
     form_msg: 'Message', form_msg_ph: 'Tell me about your project...',
+    w1_desc: 'A first-level Bitcoin protocol that turns the blockchain into a time-locked message storage and encrypted messenger via OP_RETURN. No accounts or servers.',
+    w2_desc: 'Prediction market and no-loss raffle built on Bitcoin via OPNet. Every losing bet funds a prize pool — nobody truly loses.',
+    w3_desc: 'On-chain DCA bot on Bitcoin L1 via OP_NET. Smart contract auto-swaps via Motoswap at set block intervals — no custodians, no bridges.',
+    work_link: 'Open site →',
   }
 };
 
