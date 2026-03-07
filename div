@@ -173,12 +173,15 @@ footer p { font-size: .82rem; color: var(--muted); }
 <nav>
   <div class="logo">Web3devmaster</div>
   <div class="nav-links">
-    <a href="#features">Преимущества</a>
-    <a href="#works">Работы</a>
-    <a href="#pricing">Цены</a>
-    <a href="#contact">Контакт</a>
+    <a href="#features" data-i18n="nav_features">Преимущества</a>
+    <a href="#works" data-i18n="nav_works">Работы</a>
+    <a href="#pricing" data-i18n="nav_pricing">Цены</a>
+    <a href="#contact" data-i18n="nav_contact">Контакт</a>
   </div>
-  <a href="#contact" class="btn btn-primary" style="padding:10px 22px;font-size:.85rem;">Заказать</a>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button id="lang-toggle" onclick="toggleLang()" style="background:transparent;border:1px solid rgba(0,229,255,.3);color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:.75rem;padding:6px 12px;cursor:pointer;border-radius:4px;letter-spacing:.08em;transition:all .2s;">EN</button>
+    <a href="#contact" class="btn btn-primary" style="padding:10px 22px;font-size:.85rem;" data-i18n="nav_order">Заказать</a>
+  </div>
 </nav>
 
 <section id="hero">
