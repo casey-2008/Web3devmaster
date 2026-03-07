@@ -262,12 +262,12 @@ footer p { font-size: .82rem; color: var(--muted); }
       </div>
       <div class="process-visual">
         <div style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--muted);margin-bottom:20px;">PROJECT_STATUS.log</div>
-        <div class="timeline-item"><div class="timeline-dot tl-done"></div><div class="timeline-text"><strong>Заявка получена</strong><span>Сегодня, 09:15</span></div></div>
-        <div class="timeline-item"><div class="timeline-dot tl-done"></div><div class="timeline-text"><strong>Бриф согласован</strong><span>Сегодня, 09:42</span></div></div>
-        <div class="timeline-item"><div class="timeline-dot tl-active"></div><div class="timeline-text"><strong>Разработка идёт...</strong><span>Ожидается завершение в 18:00</span></div></div>
-        <div class="timeline-item"><div class="timeline-dot tl-pending"></div><div class="timeline-text"><strong>Сдача проекта</strong><span>Ожидается</span></div></div>
+        <div class="timeline-item"><div class="timeline-dot tl-done"></div><div class="timeline-text"><strong data-i18n="tl1_title">Заявка получена</strong><span data-i18n="tl1_time">Сегодня, 09:15</span></div></div>
+        <div class="timeline-item"><div class="timeline-dot tl-done"></div><div class="timeline-text"><strong data-i18n="tl2_title">Бриф согласован</strong><span data-i18n="tl2_time">Сегодня, 09:42</span></div></div>
+        <div class="timeline-item"><div class="timeline-dot tl-active"></div><div class="timeline-text"><strong data-i18n="tl3_title">Разработка идёт...</strong><span data-i18n="tl3_time">Ожидается завершение в 18:00</span></div></div
+        <div class="timeline-item"><div class="timeline-dot tl-pending"></div><div class="timeline-text"><strong data-i18n="tl4_title">Сдача проекта</strong><span data-i18n="tl4_time">Ожидается</span></div></div>
         <div style="margin-top:24px;padding:16px;background:rgba(0,229,255,.04);border:1px solid rgba(0,229,255,.1);border-radius:8px;">
-          <div style="font-size:.75rem;color:var(--muted);margin-bottom:8px;font-family:'JetBrains Mono',monospace;">Прогресс сборки</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-bottom:8px;font-family:'JetBrains Mono',monospace;" data-i18n="build_label">Прогресс сборки</div>
           <div style="height:4px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden;"><div style="height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent));border-radius:2px;width:67%;"></div></div>
           <div style="font-size:.75rem;color:var(--accent);margin-top:8px;font-family:'JetBrains Mono',monospace;">67%</div>
         </div>
@@ -485,6 +485,11 @@ var i18n = {
     w2_desc: 'Рынок предсказаний + беспроигрышная лотерея на Bitcoin через OPNet. Каждая проигрышная ставка финансирует призовой пул — никто не теряет деньги.',
     w3_desc: 'On-chain DCA бот на Bitcoin L1 через OP_NET. Смарт-контракт автоматически свапает через Motoswap по интервалу блоков — без кастодианов и мостов.',
     work_link: 'Открыть сайт →',
+    tl1_title:'Заявка получена', tl1_time:'Сегодня, 09:15',
+    tl2_title:'Бриф согласован', tl2_time:'Сегодня, 09:42',
+    tl3_title:'Разработка идёт...', tl3_time:'Ожидается завершение в 18:00',
+    tl4_title:'Сдача проекта', tl4_time:'Ожидается',
+    build_label:'Прогресс сборки',
   },
   en: {
     nav_features:'Why me', nav_works:'Works', nav_pricing:'Pricing', nav_contact:'Contact', nav_order:'Order',
@@ -518,6 +523,11 @@ var i18n = {
     w2_desc: 'Prediction market and no-loss raffle built on Bitcoin via OPNet. Every losing bet funds a prize pool — nobody truly loses.',
     w3_desc: 'On-chain DCA bot on Bitcoin L1 via OP_NET. Smart contract auto-swaps via Motoswap at set block intervals — no custodians, no bridges.',
     work_link: 'Open site →',
+    tl1_title:'Request received', tl1_time:'Today, 09:15',
+    tl2_title:'Brief approved', tl2_time:'Today, 09:42',
+    tl3_title:'Development in progress...', tl3_time:'Expected completion at 18:00',
+    tl4_title:'Project delivery', tl4_time:'Pending',
+    build_label:'Build progress',
   }
 };
 
