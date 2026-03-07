@@ -361,14 +361,14 @@ footer p { font-size: .82rem; color: var(--muted); }
         <div class="contact-info">
           <div class="info-item"><div class="info-icon">&#128232;</div><div class="info-text"><h4>Email</h4><p><script>document.write("web3devmaster" + "@" + "gmail.com")</script></a></p></div></div>
           <div class="info-item"><div class="info-icon">&#128172;</div><div class="info-text"><h4>Telegram</h4><p>@web3devmaster</p></div></div>
-          <div class="info-item"><div class="info-icon">&#8987;</div><div class="info-text"><h4>Время работы</h4><p>Пн–Вс, 9:00–22:00 МСК</p></div></div>
+          <div class="info-item"><div class="info-icon">⏳</div><div class="info-text"><h4 data-i18n="hours_title">Время работы</h4><p data-i18n="hours_text">Пн–Вс, 9:00–22:00 МСК</p></div></div>
         </div>
       </div>
       <div>
         <div id="contact-form">
-          <div class="form-group"><label>Ваше имя</label><input type="text" id="inp-name" placeholder="Иван Петров"></div>
+          <div class="form-group"><label data-i18n="form_name">Ваше имя</label><input type="text" id="inp-name" placeholder="Иван Петров" data-i18n-placeholder="form_name_ph"></div>
           <div class="form-group"><label>Email</label><input type="email" id="inp-email" placeholder="ivan@company.ru"></div>
-          <div class="form-group"><label>Сообщение</label><textarea id="inp-message" placeholder="Расскажите о вашем проекте..."></textarea></div>
+          <div class="form-group"><label data-i18n="form_msg">Сообщение</label><textarea id="inp-message" placeholder="Расскажите о вашем проекте..." data-i18n-placeholder="form_msg_ph"></textarea></div>
           <button id="submit-btn" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;" data-i18n="contact_btn">Отправить заявку →</button>
         </div>
         <div class="form-success" id="form-success">
@@ -478,6 +478,9 @@ var i18n = {
     price_btn:'Заказать сайт',
     contact_title:'Оставьте заявку', contact_sub:'Отвечаю в течение часа. Первая консультация бесплатно.',
     contact_btn:'Отправить заявку →'
+    hours_title: 'Время работы', hours_text: 'Пн–Вс, 9:00–22:00 МСК',
+    form_name: 'Ваше имя', form_name_ph: 'Иван Петров',
+    form_msg: 'Сообщение', form_msg_ph: 'Расскажите о вашем проекте...',
   },
   en: {
     nav_features:'Why me', nav_works:'Works', nav_pricing:'Pricing', nav_contact:'Contact', nav_order:'Order',
@@ -504,6 +507,9 @@ var i18n = {
     price_btn:'Order a site',
     contact_title:'Get in touch', contact_sub:'I reply within an hour. First consultation is free.',
     contact_btn:'Send request →'
+    hours_title: 'Working hours', hours_text: 'Mon–Sun, 9:00–22:00 MSK', 
+    form_name: 'Your name', form_name_ph: 'John Smith',
+    form_msg: 'Message', form_msg_ph: 'Tell me about your project...',
   }
 };
 
@@ -540,6 +546,10 @@ function applyLang() {
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     var key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    if (t[key] !== undefined) el.placeholder = t[key];
   });
 }
 </script>
