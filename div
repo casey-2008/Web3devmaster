@@ -224,10 +224,10 @@ footer p { font-size: .82rem; color: var(--muted); }
 <div class="stats-bar">
   <div class="container">
     <div class="stats-inner">
-      <div class="stat-label" data-i18n="stat1">проектов сдано</div>
-      <div class="stat-label" data-i18n="stat2">день разработки</div>
-      <div class="stat-label" data-i18n="stat3">довольных клиентов</div>
-      <div class="stat-label" data-i18n="stat4">на связи</div>
+      <div class="stat-item"><div class="stat-num">47</div><div class="stat-label" data-i18n="stat1">проектов сдано</div></div>
+      <div class="stat-item"><div class="stat-num">1</div><div class="stat-label" data-i18n="stat2">день разработки</div></div>
+      <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label" data-i18n="stat3">довольных клиентов</div></div>
+      <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label" data-i18n="stat4">на связи</div></div>
     </div>
   </div>
 </div>
