@@ -235,8 +235,8 @@ footer p { font-size: .82rem; color: var(--muted); }
 <section id="features">
   <div class="container">
     <div class="features-head">
-      <h2 class="section-title">Почему выбирают меня</h2>
-      <p class="section-sub">Каждый проект — это результат, а не процесс. Без лишних встреч и бюрократии.</p>
+      <h2 class="section-title" data-i18n="feat_title">Почему выбирают меня</h2>
+      <p class="section-sub" data-i18n="feat_sub">Каждый проект — это результат, а не процесс. Без лишних встреч и бюрократии.</p>
     </div>
     <div class="features-grid">
       <div class="card"><div class="feat-icon cyan">⚡</div><div class="feat-title">Быстрая разработка</div><p class="feat-text">Сдаю готовый сайт уже через 24 часа после старта. Без затяжных итераций и согласований.</p></div>
@@ -251,8 +251,8 @@ footer p { font-size: .82rem; color: var(--muted); }
   <div class="container">
     <div class="process-inner">
       <div>
-        <h2 class="section-title">Как проходит работа</h2>
-        <p class="section-sub" style="margin-bottom:40px;">Просто напишите — остальное беру на себя.</p>
+        <h2 class="section-title" data-i18n="proc_title">Как проходит работа</h2>
+        <p class="section-sub" style="margin-bottom:40px;" data-i18n="proc_sub">Просто напишите — остальное беру на себя.</p>
         <div>
           <div class="step"><div class="step-num">01</div><div class="step-info"><h4>Вы оставляете заявку</h4><p>Заполняете форму или пишете в мессенджер. Я свяжусь в течение часа.</p></div></div>
           <div class="step"><div class="step-num">02</div><div class="step-info"><h4>Обсуждаем сайт</h4><p>Уточняю задачу, стиль, контент и детали. Обычно занимает 15–30 минут.</p></div></div>
@@ -278,7 +278,7 @@ footer p { font-size: .82rem; color: var(--muted); }
 
 <section id="works">
   <div class="container">
-    <h2 class="section-title">Примеры работ</h2>
+    <h2 class="section-title" data-i18n="works_title">Примеры работ</h2>
     <div class="works-grid">
   <div class="card work-card">
     <div class="work-preview" style="padding:0;overflow:hidden;height:180px;">
@@ -318,7 +318,7 @@ footer p { font-size: .82rem; color: var(--muted); }
 
 <section id="reviews">
   <div class="container">
-    <h2 class="section-title">Отзывы клиентов</h2>
+    <h2 class="section-title" data-i18n="rev_title">Отзывы клиентов</h2>
     <div class="reviews-grid">
       <div class="card review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">«Обратился вечером, а на следующий день уже получил готовый сайт. Выглядит отлично, работает быстро. Всем рекомендую!»</p><div class="review-author"><div class="avatar av1">АК</div><div><div class="author-name">Алексей Краснов</div><div class="author-role">Основатель, TechStart</div></div></div></div>
       <div class="card review-card"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">«Делали сайт для нашей компании. Результат превзошёл ожидания — современный дизайн, идеальная адаптивность и чистый код.»</p><div class="review-author"><div class="avatar av2">МВ</div><div><div class="author-name">Мария Волкова</div><div class="author-role">Директор по маркетингу, Nexus</div></div></div></div>
@@ -331,8 +331,8 @@ footer p { font-size: .82rem; color: var(--muted); }
   <div class="container">
     <div class="pricing-inner">
       <div>
-        <h2 class="section-title">Стоимость</h2>
-        <p class="section-sub" style="margin:0 auto;">Честная цена без скрытых платежей.</p>
+        <h2 class="section-title" data-i18n="price_title">Стоимость</h2>
+        <p class="section-sub" style="margin:0 auto;" data-i18n="price_sub">Честная цена без скрытых платежей.</p>
       </div>
       <div class="price-card">
         <div class="price-badge">Популярно</div>
@@ -346,7 +346,7 @@ footer p { font-size: .82rem; color: var(--muted); }
           <li>SEO-оптимизация и PageSpeed 90+</li>
           <li>Исходный код в ваших руках</li>
         </ul>
-        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Заказать сайт</a>
+        <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;" data-i18n="price_btn">Заказать сайт</a>
       </div>
     </div>
   </div>
@@ -356,8 +356,8 @@ footer p { font-size: .82rem; color: var(--muted); }
   <div class="container">
     <div class="contact-inner">
       <div>
-        <h2 class="section-title">Оставьте заявку</h2>
-        <p class="section-sub" style="margin-bottom:40px;">Отвечаю в течение часа. Первая консультация бесплатно.</p>
+        <h2 class="section-title" data-i18n="contact_title">Оставьте заявку</h2>
+        <p class="section-sub" style="margin-bottom:40px;" data-i18n="contact_sub">Отвечаю в течение часа. Первая консультация бесплатно.</p>
         <div class="contact-info">
           <div class="info-item"><div class="info-icon">&#128232;</div><div class="info-text"><h4>Email</h4><p>web3devmaster@gmail.com</p></div></div>
           <div class="info-item"><div class="info-icon">&#128172;</div><div class="info-text"><h4>Telegram</h4><p>@web3devmaster</p></div></div>
@@ -369,7 +369,7 @@ footer p { font-size: .82rem; color: var(--muted); }
           <div class="form-group"><label>Ваше имя</label><input type="text" id="inp-name" placeholder="Иван Петров"></div>
           <div class="form-group"><label>Email</label><input type="email" id="inp-email" placeholder="ivan@company.ru"></div>
           <div class="form-group"><label>Сообщение</label><textarea id="inp-message" placeholder="Расскажите о вашем проекте..."></textarea></div>
-          <button id="submit-btn" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;">Отправить заявку &#8594;</button>
+          <button id="submit-btn" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;" data-i18n="contact_btn">Отправить заявку →</button>
         </div>
         <div class="form-success" id="form-success">
           <div style="font-size:2rem;margin-bottom:12px;">&#10003;</div>
@@ -451,6 +451,69 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a) {
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+// ── ПЕРЕВОДЫ ──
+var i18n = {
+  ru: {
+    nav_features: 'Преимущества', nav_works: 'Работы', nav_pricing: 'Цены',
+    nav_contact: 'Контакт', nav_order: 'Заказать',
+    hero_tag: 'Доступно прямо сейчас',
+    hero_h1: 'Сделаю вам сайт<br><em>за один день</em>',
+    hero_sub: 'Современные и быстрые сайты для бизнеса. Никаких долгих согласований — только результат.',
+    hero_btn1: 'Заказать сайт →', hero_btn2: 'Смотреть работы',
+    stat1: 'проектов сдано', stat2: 'день разработки',
+    stat3: 'довольных клиентов', stat4: 'на связи',
+    feat_title: 'Почему выбирают меня',
+    feat_sub: 'Каждый проект — это результат, а не процесс. Без лишних встреч и бюрократии.',
+    proc_title: 'Как проходит работа',
+    proc_sub: 'Просто напишите — остальное беру на себя.',
+    works_title: 'Примеры работ',
+    rev_title: 'Отзывы клиентов',
+    price_title: 'Стоимость',
+    price_sub: 'Честная цена без скрытых платежей.',
+    price_btn: 'Заказать сайт',
+    contact_title: 'Оставьте заявку',
+    contact_sub: 'Отвечаю в течение часа. Первая консультация бесплатно.',
+    contact_btn: 'Отправить заявку →'
+  },
+  en: {
+    nav_features: 'Why me', nav_works: 'Works', nav_pricing: 'Pricing',
+    nav_contact: 'Contact', nav_order: 'Order',
+    hero_tag: 'Available right now',
+    hero_h1: 'I\'ll build your site<br><em>in one day</em>',
+    hero_sub: 'Modern and fast websites for business. No lengthy approvals — just results.',
+    hero_btn1: 'Order a site →', hero_btn2: 'View works',
+    stat1: 'projects delivered', stat2: 'day turnaround',
+    stat3: 'happy clients', stat4: 'online',
+    feat_title: 'Why choose me',
+    feat_sub: 'Every project is about results, not process. No unnecessary meetings.',
+    proc_title: 'How it works',
+    proc_sub: 'Just write to me — I\'ll handle the rest.',
+    works_title: 'Portfolio',
+    rev_title: 'Client reviews',
+    price_title: 'Pricing',
+    price_sub: 'Honest price with no hidden fees.',
+    price_btn: 'Order a site',
+    contact_title: 'Get in touch',
+    contact_sub: 'I reply within an hour. First consultation is free.',
+    contact_btn: 'Send request →'
+  }
+};
+
+var currentLang = 'ru';
+
+function toggleLang() {
+  currentLang = currentLang === 'ru' ? 'en' : 'ru';
+  document.getElementById('lang-toggle').textContent = currentLang === 'ru' ? 'EN' : 'RU';
+  applyLang();
+}
+
+function applyLang() {
+  var t = i18n[currentLang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+}
 </script>
 </body>
 </html>
