@@ -359,7 +359,7 @@ footer p { font-size: .82rem; color: var(--muted); }
         <h2 class="section-title" data-i18n="contact_title">Оставьте заявку</h2>
         <p class="section-sub" style="margin-bottom:40px;" data-i18n="contact_sub">Отвечаю в течение часа. Первая консультация бесплатно.</p>
         <div class="contact-info">
-          <div class="info-item"><div class="info-icon">&#128232;</div><div class="info-text"><h4>Email</h4><p>web3devmaster@gmail.com</p></div></div>
+          <div class="info-item"><div class="info-icon">&#128232;</div><div class="info-text"><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c2b5a7a0f1a6a7b4afa3b1b6a7b082a5afa3abaeeca1adaf">[email&#160;protected]</a></p></div></div>
           <div class="info-item"><div class="info-icon">&#128172;</div><div class="info-text"><h4>Telegram</h4><p>@web3devmaster</p></div></div>
           <div class="info-item"><div class="info-icon">&#8987;</div><div class="info-text"><h4>Время работы</h4><p>Пн–Вс, 9:00–22:00 МСК</p></div></div>
         </div>
@@ -391,7 +391,7 @@ footer p { font-size: .82rem; color: var(--muted); }
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // =============================================
 // ВСТАВЬТЕ СЮДА СВОИ ДАННЫЕ:
 var TG_BOT_TOKEN = '8275219782:AAFoL7kNGLnMG1D23GvhzERlH-bdidHiESc';    // токен от @BotFather
@@ -508,12 +508,3 @@ function toggleLang() {
 }
 
 function applyLang() {
-  var t = i18n[currentLang];
-  document.querySelectorAll('[data-i18n]').forEach(function(el) {
-    var key = el.getAttribute('data-i18n');
-    if (t[key] !== undefined) el.innerHTML = t[key];
-  });
-}
-</script>
-</body>
-</html>
