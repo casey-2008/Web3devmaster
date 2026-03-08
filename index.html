@@ -623,7 +623,7 @@ function updatePrice() {
   priceEl.innerHTML = '~ <span style="font-size:1.5rem;color:var(--muted)">загрузка...</span>';
   fetch('https://open.er-api.com/v6/latest/RUB')
     .then(function(r){return r.json();})
-    .then(function(data){ priceEl.innerHTML = '$' + Math.round(8000 * data.rates.USD); })
+    .then(function(data){ priceEl.innerHTML = '$' + Math.round(10000 * data.rates.USD); })
     .catch(function(){ priceEl.innerHTML = '~ $90'; });
 }
 function applyLang() {
