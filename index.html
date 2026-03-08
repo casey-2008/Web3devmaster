@@ -86,43 +86,28 @@ h1 em { font-style: normal; color: var(--accent); }
 .feat-icon.green { background: rgba(16,185,129,.08); border-color: rgba(16,185,129,.2); }
 .feat-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
 .feat-text { font-size: .88rem; color: var(--muted); line-height: 1.65; }
-<!-- ═══ ЧИСТЫЙ КОД ═══ -->
-<section class="clean-code" id="clean-code">
-  <div class="container">
-    <div class="clean-code__header">
-      <span class="section-tag">Мой подход</span>
-      <h2 class="section-title">Только чистый код —<br>без конструкторов</h2>
-      <p class="section-sub">Каждый сайт пишу вручную с нуля. Никакой Tilda, Wix или WordPress — только HTML, CSS и JavaScript под вашу задачу.</p>
-    </div>
-    <div class="clean-code__grid">
-      <div class="clean-code__card">
-        <div class="clean-code__icon">◉</div>
-        <h3>Уникальный дизайн</h3>
-        <p>Никаких шаблонов. Верстка, анимации и поведение элементов — на&nbsp;100% под ваш бренд.</p>
-      </div>
-      <div class="clean-code__card">
-        <div class="clean-code__icon">⚙</div>
-        <h3>Любая логика</h3>
-        <p>Онлайн-бронь, нестандартное меню, интеграция с CRM — без ограничений платформы.</p>
-      </div>
-      <div class="clean-code__card">
-        <div class="clean-code__icon">▶</div>
-        <h3>Быстрая загрузка</h3>
-        <p>Нет лишних плагинов и скриптов конструктора. Страница грузится быстрее — конверсия выше.</p>
-      </div>
-      <div class="clean-code__card">
-        <div class="clean-code__icon">◎</div>
-        <h3>SEO с нуля</h3>
-        <p>Правильная семантика, микроразметка и структура — сразу в коде, а не поверх шаблона.</p>
-      </div>
-      <div class="clean-code__card clean-code__card--wide">
-        <div class="clean-code__icon">∞</div>
-        <h3>Без привязки к платформе</h3>
-        <p>Никаких тарифов и ограничений конструктора. Сайт — ваш: переносите на любой хостинг, дорабатывайте с любым разработчиком.</p>
-      </div>
-    </div>
-  </div>
-</section>  
+
+/* ── ЧИСТЫЙ КОД ── */
+#cleancode { padding: 100px 0; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.cleancode-head { text-align: center; margin-bottom: 56px; }
+.cleancode-head .section-sub { margin: 0 auto; max-width: 600px; }
+.cleancode-vs { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
+.vs-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: .75rem; font-weight: 700; }
+.vs-bad { background: rgba(239,68,68,.08); border: 1px solid rgba(239,68,68,.2); color: #f87171; }
+.vs-good { background: rgba(0,229,255,.08); border: 1px solid rgba(0,229,255,.25); color: var(--accent); }
+.vs-sep { color: var(--muted); font-size: .85rem; }
+.cleancode-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); }
+@media(max-width: 640px) { .cleancode-grid { grid-template-columns: 1fr; } }
+.cc-card { background: var(--bg); padding: 32px 28px; transition: background .25s; }
+.cc-card:hover { background: rgba(13,17,23,.95); }
+.cc-card-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 56px 1fr 1fr; gap: 0 32px; align-items: center; background: var(--bg); padding: 28px; transition: background .25s; }
+@media(max-width:640px) { .cc-card-wide { grid-column: 1; grid-template-columns: 1fr; gap: 12px; } }
+.cc-card-wide:hover { background: rgba(13,17,23,.95); }
+.cc-icon { width: 44px; height: 44px; border-radius: 8px; background: rgba(0,229,255,.06); border: 1px solid rgba(0,229,255,.15); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 20px; flex-shrink: 0; }
+.cc-card-wide .cc-icon { margin-bottom: 0; }
+.cc-title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.cc-text { font-size: .85rem; color: var(--muted); line-height: 1.65; }
+
 #process { padding: 100px 0; }
 .process-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 @media(max-width:768px) { .process-inner { grid-template-columns: 1fr; gap: 40px; } }
@@ -211,6 +196,7 @@ footer p { font-size: .82rem; color: var(--muted); }
   <div class="logo">Web3devmaster</div>
   <div class="nav-links">
     <a href="#features" data-i18n="nav_features">Преимущества</a>
+    <a href="#cleancode" data-i18n="nav_cleancode">Подход</a>
     <a href="#works" data-i18n="nav_works">Работы</a>
     <a href="#pricing" data-i18n="nav_pricing">Цены</a>
     <a href="#contact" data-i18n="nav_contact">Контакт</a>
@@ -280,6 +266,51 @@ footer p { font-size: .82rem; color: var(--muted); }
       <div class="card"><div class="feat-icon violet">◈</div><div class="feat-title" data-i18n="f2_title">Современный дизайн</div><p class="feat-text" data-i18n="f2_text">Минималистичный, чёткий стиль. Ваш сайт будет выглядеть как продукт из будущего.</p></div>
       <div class="card"><div class="feat-icon amber">⊞</div><div class="feat-title" data-i18n="f3_title">Адаптивность</div><p class="feat-text" data-i18n="f3_text">Идеальное отображение на телефоне, планшете и десктопе. Проверено на всех устройствах.</p></div>
       <div class="card"><div class="feat-icon green">{ }</div><div class="feat-title" data-i18n="f4_title">Чистый код</div><p class="feat-text" data-i18n="f4_text">Семантичный, читаемый HTML/CSS/JS. SEO-оптимизация и высокий PageSpeed в комплекте.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ЧИСТЫЙ КОД / ПОДХОД ═══ -->
+<section id="cleancode">
+  <div class="container">
+    <div class="cleancode-head">
+      <div class="section-label" data-i18n="cc_label">Мой подход</div>
+      <h2 class="section-title" data-i18n="cc_title">Пишу код вручную —<br>без конструкторов</h2>
+      <p class="section-sub" data-i18n="cc_sub">Никакой Tilda, Wix или WordPress. Каждый сайт — с нуля на чистом HTML, CSS и JavaScript. Это даёт свободу, которую шаблон никогда не обеспечит.</p>
+    </div>
+    <div class="cleancode-vs">
+      <span class="vs-badge vs-bad">✕ &nbsp;Tilda / Wix / WordPress</span>
+      <span class="vs-sep">vs</span>
+      <span class="vs-badge vs-good">✓ &nbsp;Чистый HTML / CSS / JS</span>
+    </div>
+    <div class="cleancode-grid">
+      <div class="cc-card">
+        <div class="cc-icon">◉</div>
+        <div class="cc-title" data-i18n="cc1_title">Уникальный дизайн и бренд</div>
+        <p class="cc-text" data-i18n="cc1_text">Никаких типовых шаблонов. Верстка, анимации и поведение элементов — на 100% под ваш бренд.</p>
+      </div>
+      <div class="cc-card">
+        <div class="cc-icon">⚙</div>
+        <div class="cc-title" data-i18n="cc2_title">Максимальная гибкость</div>
+        <p class="cc-text" data-i18n="cc2_text">Онлайн-бронь, нестандартное меню, интеграция с CRM — любая логика без ограничений платформы.</p>
+      </div>
+      <div class="cc-card">
+        <div class="cc-icon">▶</div>
+        <div class="cc-title" data-i18n="cc3_title">Скорость загрузки</div>
+        <p class="cc-text" data-i18n="cc3_text">Нет лишних плагинов и скриптов конструктора. Страница грузится быстрее — конверсия выше.</p>
+      </div>
+      <div class="cc-card">
+        <div class="cc-icon">◎</div>
+        <div class="cc-title" data-i18n="cc4_title">Лучший SEO-потенциал</div>
+        <p class="cc-text" data-i18n="cc4_text">Правильная семантика, микроразметка и структура — сразу в коде, а не поверх тяжёлого шаблона.</p>
+      </div>
+      <div class="cc-card-wide">
+        <div class="cc-icon">∞</div>
+        <div>
+          <div class="cc-title" data-i18n="cc5_title">Без привязки к платформе</div>
+        </div>
+        <p class="cc-text" data-i18n="cc5_text">Никаких тарифов и ограничений конструктора. Сайт — ваш: переносите на любой хостинг, дорабатывайте с любым разработчиком.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -396,8 +427,8 @@ footer p { font-size: .82rem; color: var(--muted); }
         <h2 class="section-title" data-i18n="contact_title">Оставьте заявку</h2>
         <p class="section-sub" style="margin-bottom:40px;" data-i18n="contact_sub">Отвечаю в течение часа. Первая консультация бесплатно.</p>
         <div class="contact-info">
-          <div class="info-item"><div class="info-icon">&#128232;</div><div class="info-text"><h4>Email</h4><p><script>document.write("web3devmaster" + "@" + "gmail.com")</script></a></p></div></div>
-          <div class="info-item"><div class="info-icon">&#128172;</div><div class="info-text"><h4>Telegram</h4><p>@web3devmaster</p></div></div>
+          <div class="info-item"><div class="info-icon">&#128232;</div><div class="info-text"><h4>Email</h4><p><script>document.write("web3devmaster" + "@" + "gmail.com")</script></p></div></div>
+          <div class="info-item"><div class="info-icon">&#128172;</div><div class="info-text"><h4>Telegram</h4><p><a href="https://t.me/web3devmaster" target="_blank" style="color:var(--accent);text-decoration:none;">@web3devmaster</a></p></div></div>
           <div class="info-item"><div class="info-icon">⏳</div><div class="info-text"><h4 data-i18n="hours_title">Время работы</h4><p data-i18n="hours_text">Пн–Вс, 9:00–22:00 МСК</p></div></div>
         </div>
       </div>
@@ -429,17 +460,13 @@ footer p { font-size: .82rem; color: var(--muted); }
 </footer>
 
 <script>
-// =============================================
-// ВСТАВЬТЕ СЮДА СВОИ ДАННЫЕ:
-var TG_BOT_TOKEN = '8275219782:AAFoL7kNGLnMG1D23GvhzERlH-bdidHiESc';    // токен от @BotFather
-var TG_CHAT_ID   = '5371718405';  // например: 5371718405
-// =============================================
+var TG_BOT_TOKEN = '8275219782:AAFoL7kNGLnMG1D23GvhzERlH-bdidHiESc';
+var TG_CHAT_ID   = '5371718405';
 
 document.getElementById('submit-btn').addEventListener('click', function() {
   var nameVal    = document.getElementById('inp-name').value.trim();
   var emailVal   = document.getElementById('inp-email').value.trim();
   var messageVal = document.getElementById('inp-message').value.trim();
-
   var hasError = false;
   [['inp-name', nameVal], ['inp-email', emailVal], ['inp-message', messageVal]].forEach(function(pair) {
     var el = document.getElementById(pair[0]);
@@ -450,17 +477,11 @@ document.getElementById('submit-btn').addEventListener('click', function() {
     }
   });
   if (hasError) return;
-
   var btn = document.getElementById('submit-btn');
   btn.textContent = 'Отправляем...';
   btn.style.opacity = '0.7';
   btn.style.pointerEvents = 'none';
-
-  var text = 'Новая заявка с сайта!\n\n'
-    + 'Имя: ' + nameVal + '\n'
-    + 'Email: ' + emailVal + '\n\n'
-    + 'Сообщение:\n' + messageVal;
-
+  var text = 'Новая заявка с сайта!\n\nИмя: ' + nameVal + '\nEmail: ' + emailVal + '\n\nСообщение:\n' + messageVal;
   fetch('https://api.telegram.org/bot' + TG_BOT_TOKEN + '/sendMessage', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -477,25 +498,20 @@ document.getElementById('submit-btn').addEventListener('click', function() {
     btn.style.opacity = '1';
     btn.style.pointerEvents = '';
     alert('Ошибка: ' + err.message);
-    console.error(err);
   });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(function(a) {
   a.addEventListener('click', function(e) {
     e.preventDefault();
-    var href = a.getAttribute('href');
-    var target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      history.pushState(null, null, href);
-    }
+    var target = document.querySelector(a.getAttribute('href'));
+    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); history.pushState(null, null, a.getAttribute('href')); }
   });
 });
-// ── ПЕРЕВОДЫ ──
+
 var i18n = {
   ru: {
-    nav_features:'Преимущества', nav_works:'Работы', nav_pricing:'Цены', nav_contact:'Контакт', nav_order:'Заказать',
+    nav_features:'Преимущества', nav_cleancode:'Подход', nav_works:'Работы', nav_pricing:'Цены', nav_contact:'Контакт', nav_order:'Заказать',
     hero_tag:'Доступно прямо сейчас', hero_h1:'Сделаю вам сайт<br><em>за один день</em>',
     hero_sub:'Современные и быстрые сайты для бизнеса. Никаких долгих согласований — только результат.',
     hero_btn1:'Заказать сайт →', hero_btn2:'Смотреть работы',
@@ -505,13 +521,19 @@ var i18n = {
     f2_title:'Современный дизайн', f2_text:'Минималистичный, чёткий стиль. Ваш сайт будет выглядеть как продукт из будущего.',
     f3_title:'Адаптивность', f3_text:'Идеальное отображение на телефоне, планшете и десктопе. Проверено на всех устройствах.',
     f4_title:'Чистый код', f4_text:'Семантичный, читаемый HTML/CSS/JS. SEO-оптимизация и высокий PageSpeed в комплекте.',
+    cc_label:'Мой подход', cc_title:'Пишу код вручную —<br>без конструкторов',
+    cc_sub:'Никакой Tilda, Wix или WordPress. Каждый сайт — с нуля на чистом HTML, CSS и JavaScript. Это даёт свободу, которую шаблон никогда не обеспечит.',
+    cc1_title:'Уникальный дизайн и бренд', cc1_text:'Никаких типовых шаблонов. Верстка, анимации и поведение элементов — на 100% под ваш бренд.',
+    cc2_title:'Максимальная гибкость', cc2_text:'Онлайн-бронь, нестандартное меню, интеграция с CRM — любая логика без ограничений платформы.',
+    cc3_title:'Скорость загрузки', cc3_text:'Нет лишних плагинов и скриптов конструктора. Страница грузится быстрее — конверсия выше.',
+    cc4_title:'Лучший SEO-потенциал', cc4_text:'Правильная семантика, микроразметка и структура — сразу в коде, а не поверх тяжёлого шаблона.',
+    cc5_title:'Без привязки к платформе', cc5_text:'Никаких тарифов и ограничений конструктора. Сайт — ваш: переносите на любой хостинг, дорабатывайте с любым разработчиком.',
     proc_title:'Как проходит работа', proc_sub:'Просто напишите — остальное беру на себя.',
     s1_title:'Вы оставляете заявку', s1_text:'Заполняете форму или пишете в мессенджер. Я свяжусь в течение часа.',
     s2_title:'Обсуждаем сайт', s2_text:'Уточняю задачу, стиль, контент и детали. Обычно занимает 15–30 минут.',
     s3_title:'Я создаю сайт', s3_text:'Разрабатываю и собираю сайт. Держу вас в курсе по ходу работы.',
     s4_title:'Вы получаете результат', s4_text:'Готовый сайт с исходниками и инструкцией по управлению.',
-    works_title:'Примеры работ',
-    rev_title:'Отзывы клиентов',
+    works_title:'Примеры работ', rev_title:'Отзывы клиентов',
     price_title:'Стоимость', price_sub:'Честная цена без скрытых платежей.', price_badge:'Популярно',
     price_type:'Лендинг / Одностраничник', price_from:'Цена зависит от сложности проекта',
     li1:'Современный дизайн под ваш бизнес', li2:'Адаптивная верстка (mobile + desktop)',
@@ -519,22 +541,18 @@ var i18n = {
     price_btn:'Заказать сайт',
     contact_title:'Оставьте заявку', contact_sub:'Отвечаю в течение часа. Первая консультация бесплатно.',
     contact_btn:'Отправить заявку →',
-    hours_title: 'Время работы', hours_text: 'Пн–Вс, 9:00–22:00 МСК',
-    form_name: 'Ваше имя', form_name_ph: 'Иван Петров',
-    form_msg: 'Сообщение', form_msg_ph: 'Расскажите о вашем проекте...',
-    w1_desc: 'Протокол первого уровня Bitcoin — хранилище сообщений с временной блокировкой и зашифрованный мессенджер через OP_RETURN. Без аккаунтов и серверов.',
-    w2_desc: 'Рынок предсказаний + беспроигрышная лотерея на Bitcoin через OPNet. Каждая проигрышная ставка финансирует призовой пул — никто не теряет деньги.',
-    w3_desc: 'On-chain DCA бот на Bitcoin L1 через OP_NET. Смарт-контракт автоматически свапает через Motoswap по интервалу блоков — без кастодианов и мостов.',
-    work_link: 'Открыть сайт →',
-    tl1_title:'Заявка получена', tl1_time:'Сегодня, 09:15',
-    tl2_title:'Бриф согласован', tl2_time:'Сегодня, 09:42',
-    tl3_title:'Разработка идёт...', tl3_time:'Ожидается завершение в 18:00',
-    tl4_title:'Сдача проекта', tl4_time:'Ожидается',
-    build_label:'Прогресс сборки',
-    code_status: '// Статус: ', code_ready: 'сайт готов',
+    hours_title:'Время работы', hours_text:'Пн–Вс, 9:00–22:00 МСК',
+    form_name:'Ваше имя', form_name_ph:'Иван Петров', form_msg:'Сообщение', form_msg_ph:'Расскажите о вашем проекте...',
+    w1_desc:'Протокол первого уровня Bitcoin — хранилище сообщений с временной блокировкой и зашифрованный мессенджер через OP_RETURN. Без аккаунтов и серверов.',
+    w2_desc:'Рынок предсказаний + беспроигрышная лотерея на Bitcoin через OPNet. Каждая проигрышная ставка финансирует призовой пул — никто не теряет деньги.',
+    w3_desc:'On-chain DCA бот на Bitcoin L1 через OP_NET. Смарт-контракт автоматически свапает через Motoswap по интервалу блоков — без кастодианов и мостов.',
+    work_link:'Открыть сайт →',
+    tl1_title:'Заявка получена', tl1_time:'Сегодня, 09:15', tl2_title:'Бриф согласован', tl2_time:'Сегодня, 09:42',
+    tl3_title:'Разработка идёт...', tl3_time:'Ожидается завершение в 18:00', tl4_title:'Сдача проекта', tl4_time:'Ожидается',
+    build_label:'Прогресс сборки', code_status:'// Статус: ', code_ready:'сайт готов',
   },
   en: {
-    nav_features:'Why me', nav_works:'Works', nav_pricing:'Pricing', nav_contact:'Contact', nav_order:'Order',
+    nav_features:'Why me', nav_cleancode:'Approach', nav_works:'Works', nav_pricing:'Pricing', nav_contact:'Contact', nav_order:'Order',
     hero_tag:'Available right now', hero_h1:'I\'ll build your site<br><em>in one day</em>',
     hero_sub:'Modern and fast websites for business. No lengthy approvals — just results.',
     hero_btn1:'Order a site →', hero_btn2:'View works',
@@ -544,13 +562,19 @@ var i18n = {
     f2_title:'Modern design', f2_text:'Clean, minimal style. Your site will look like a product from the future.',
     f3_title:'Responsive', f3_text:'Perfect display on phone, tablet and desktop. Tested on all devices.',
     f4_title:'Clean code', f4_text:'Semantic, readable HTML/CSS/JS. SEO optimization and PageSpeed 90+ included.',
+    cc_label:'My approach', cc_title:'Handwritten code —<br>no page builders',
+    cc_sub:'No Tilda, Wix or WordPress. Every site built from scratch with pure HTML, CSS and JavaScript — giving freedom no template can match.',
+    cc1_title:'Unique design & brand', cc1_text:'No generic templates. Layout, animations and element behavior — 100% tailored to your brand.',
+    cc2_title:'Maximum flexibility', cc2_text:'Online booking, custom menus, CRM integrations — any logic, free from platform constraints.',
+    cc3_title:'Load speed', cc3_text:'No bloated builder plugins or scripts. Faster pages mean higher conversions.',
+    cc4_title:'Better SEO potential', cc4_text:'Correct semantics, microdata and structure baked into the code — not layered over a heavy template.',
+    cc5_title:'No platform lock-in', cc5_text:'No subscriptions or builder limitations. The site is yours: host anywhere, extend with any developer.',
     proc_title:'How it works', proc_sub:'Just write to me — I\'ll handle the rest.',
     s1_title:'You submit a request', s1_text:'Fill out the form or message me. I\'ll get back to you within an hour.',
     s2_title:'We discuss the site', s2_text:'I clarify the task, style, content and details. Usually takes 15–30 minutes.',
     s3_title:'I build the site', s3_text:'I develop and assemble the site. I keep you updated throughout.',
     s4_title:'You get the result', s4_text:'Finished site with source code and a management guide.',
-    works_title:'Portfolio',
-    rev_title:'Client reviews',
+    works_title:'Portfolio', rev_title:'Client reviews',
     price_title:'Pricing', price_sub:'Honest price with no hidden fees.', price_badge:'Popular',
     price_type:'Landing / One-pager', price_from:'Price depends on project complexity',
     li1:'Modern design for your business', li2:'Responsive layout (mobile + desktop)',
@@ -558,50 +582,33 @@ var i18n = {
     price_btn:'Order a site',
     contact_title:'Get in touch', contact_sub:'I reply within an hour. First consultation is free.',
     contact_btn:'Send request →',
-    hours_title: 'Working hours', hours_text: 'Mon–Sun, 9:00–22:00 MSK', 
-    form_name: 'Your name', form_name_ph: 'John Smith',
-    form_msg: 'Message', form_msg_ph: 'Tell me about your project...',
-    w1_desc: 'A first-level Bitcoin protocol that turns the blockchain into a time-locked message storage and encrypted messenger via OP_RETURN. No accounts or servers.',
-    w2_desc: 'Prediction market and no-loss raffle built on Bitcoin via OPNet. Every losing bet funds a prize pool — nobody truly loses.',
-    w3_desc: 'On-chain DCA bot on Bitcoin L1 via OP_NET. Smart contract auto-swaps via Motoswap at set block intervals — no custodians, no bridges.',
-    work_link: 'Open site →',
-    tl1_title:'Request received', tl1_time:'Today, 09:15',
-    tl2_title:'Brief approved', tl2_time:'Today, 09:42',
-    tl3_title:'Development in progress...', tl3_time:'Expected completion at 18:00',
-    tl4_title:'Project delivery', tl4_time:'Pending',
-    build_label:'Build progress',
-    code_status: '// Status: ', code_ready: 'site is ready',
+    hours_title:'Working hours', hours_text:'Mon–Sun, 9:00–22:00 MSK',
+    form_name:'Your name', form_name_ph:'John Smith', form_msg:'Message', form_msg_ph:'Tell me about your project...',
+    w1_desc:'A first-level Bitcoin protocol — time-locked message storage and encrypted messenger via OP_RETURN. No accounts or servers.',
+    w2_desc:'Prediction market and no-loss raffle built on Bitcoin via OPNet. Every losing bet funds a prize pool — nobody truly loses.',
+    w3_desc:'On-chain DCA bot on Bitcoin L1 via OP_NET. Smart contract auto-swaps via Motoswap at set block intervals — no custodians, no bridges.',
+    work_link:'Open site →',
+    tl1_title:'Request received', tl1_time:'Today, 09:15', tl2_title:'Brief approved', tl2_time:'Today, 09:42',
+    tl3_title:'Development in progress...', tl3_time:'Expected completion at 18:00', tl4_title:'Project delivery', tl4_time:'Pending',
+    build_label:'Build progress', code_status:'// Status: ', code_ready:'site is ready',
   }
 };
 
 var currentLang = 'ru';
-
 function toggleLang() {
   currentLang = currentLang === 'ru' ? 'en' : 'ru';
   document.getElementById('lang-toggle').textContent = currentLang === 'ru' ? 'EN' : 'RU';
-  applyLang();
-  updatePrice();
+  applyLang(); updatePrice();
 }
-
 function updatePrice() {
   var priceEl = document.querySelector('.price-num');
-  if (currentLang === 'ru') {
-    priceEl.innerHTML = '8 000 ₽';
-    return;
-  }
+  if (currentLang === 'ru') { priceEl.innerHTML = '8 000 ₽'; return; }
   priceEl.innerHTML = '~ <span style="font-size:1.5rem;color:var(--muted)">загрузка...</span>';
   fetch('https://open.er-api.com/v6/latest/RUB')
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      var rate = data.rates.USD;
-      var usd = Math.round(8000 * rate);
-      priceEl.innerHTML = '$' + usd;
-    })
-    .catch(function() {
-      priceEl.innerHTML = '~ $90';
-    });
+    .then(function(r){return r.json();})
+    .then(function(data){ priceEl.innerHTML = '$' + Math.round(8000 * data.rates.USD); })
+    .catch(function(){ priceEl.innerHTML = '~ $90'; });
 }
-
 function applyLang() {
   var t = i18n[currentLang];
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
