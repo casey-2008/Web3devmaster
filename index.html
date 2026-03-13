@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Основные SEO теги -->
-<title>Сайт за 1 день от 10 000 ₽ | Разработка сайтов | Web3devmaster</title>
+<title>Сайт за 1 день от 40 000 ₽ | Разработка сайтов | Web3devmaster</title>
 <meta name="description" content="Разработка современных сайтов за 1 день. Лендинги, корпоративные сайты, интернет-магазины. Адаптивный дизайн, SEO, PageSpeed 90+. От 10 000 ₽. Пишите в Telegram @Web3devmaster.">
 <meta name="keywords" content="разработка сайтов, заказать сайт, сайт за один день, лендинг под ключ, создать сайт недорого, веб-разработчик, сайт для бизнеса, сайт за 24 часа">
 <meta name="author" content="Web3devmaster">
@@ -22,7 +22,7 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Сайт за 1 день от 10 000 ₽ | Web3devmaster">
+<meta name="twitter:title" content="Сайт за 1 день от 40 000 ₽ | Web3devmaster">
 <meta name="twitter:description" content="Современные и быстрые сайты для бизнеса. От 10 000 ₽. Результат через 24 часа.">
 
 <!-- Структурированные данные для Яндекс и Google -->
@@ -37,7 +37,7 @@
   "offers": {
     "@type": "Offer",
     "name": "Разработка лендинга",
-    "price": "10000",
+    "price": "40000",
     "priceCurrency": "RUB",
     "description": "Современный лендинг за 1 день"
   },
@@ -454,7 +454,7 @@ footer p { font-size: .82rem; color: var(--muted); }
       <div class="price-card">
         <div class="price-badge" data-i18n="price_badge">Популярно</div>
         <div style="font-size:.85rem;color:var(--muted);margin-top:12px;" data-i18n="price_type">Лендинг / Одностраничник</div>
-        <div class="price-num">10 000 ₽</div>
+        <div class="price-num">40 000 ₽</div>
         <div class="price-from" data-i18n="price_from">Цена зависит от сложности проекта</div>
         <ul class="price-features">
           <li data-i18n="li1">Современный дизайн под ваш бизнес</li>
@@ -651,11 +651,11 @@ function toggleLang() {
 }
 function updatePrice() {
   var priceEl = document.querySelector('.price-num');
-  if (currentLang === 'ru') { priceEl.innerHTML = '10 000 ₽'; return; }
+  if (currentLang === 'ru') { priceEl.innerHTML = '40 000 ₽'; return; }
   priceEl.innerHTML = '~ <span style="font-size:1.5rem;color:var(--muted)">загрузка...</span>';
   fetch('https://open.er-api.com/v6/latest/RUB')
     .then(function(r){return r.json();})
-    .then(function(data){ priceEl.innerHTML = '$' + Math.round(10000 * data.rates.USD); })
+    .then(function(data){ priceEl.innerHTML = '$' + Math.round(40000 * data.rates.USD); })
     .catch(function(){ priceEl.innerHTML = '~ $90'; });
 }
 function applyLang() {
